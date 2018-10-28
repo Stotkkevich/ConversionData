@@ -8,7 +8,6 @@ public class SumNumberTest {
 
 	@Test
 	public void testGetConversionData() {
-		
 		int d = SumNumber.getConversionData();
 
 		assertNotNull(d);
