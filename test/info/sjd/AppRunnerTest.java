@@ -8,10 +8,10 @@ public class AppRunnerTest {
 
 	@Test
 	public void testGetConversion() {
-		int result = AppRunner.getConversionData();
+		int s = AppRunner.getConversionData();
 
-		assertNotNull(result);
-		assertEquals(99000099, (int) result);
+		assertNotNull(s);
+		assertEquals(99000099, (int) s);
 	}
 
 	@Test

@@ -7,11 +7,12 @@ public class AppRunner {
 	private static Logger logger = Logger.getLogger(AppRunner.class.getName());
 	private static String a = "12345";
 	private static int m = 9999, n = 9999;
+	private static int z = Integer.parseInt(a);
 	
 	public static void main(String[] args) {
 		
-		int result = getConversionData();
-		logger.info("Maximum palidrome when multiplying numbers " + m + " on " + n + " equals " + result);
+		int s = getConversionData();
+		logger.info("Maximum palindrome number when multiplied " + m + " on " + n + " equally " + s);
 		int d = getFirstMethod();
 		logger.info("Sum of digits " + a + " division residue method, is equal to " + d);
 		int j = getSecondMethod();
@@ -20,11 +21,11 @@ public class AppRunner {
 
 	public static int getFirstMethod() {
 
-		int x = 12345, s = 0;
+		int s = 0;
 
-		while (x != 0) {
-			s += x % 10;
-			x /= 10;
+		while (z != 0) {
+			s += z % 10;
+			z /= 10;
 		}
 		return s;
 
@@ -52,8 +53,8 @@ public class AppRunner {
 		return -1;
 	}
 
-	public static boolean isMaxPalindrome(int result) {
-		final String str = String.valueOf(result);
+	public static boolean isMaxPalindrome(int s) {
+		final String str = String.valueOf(s);
 		int length = str.length();
 		for (int i = 0; i < length / 2; i++) {
 			if (str.charAt(i) != str.charAt(length - 1 - i))
