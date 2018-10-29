@@ -6,17 +6,20 @@ public class AppRunner {
 
 	private static Logger logger = Logger.getLogger(AppRunner.class.getName());
 	private static String a = "12345";
-	private static int m = 9999, n = 9999;
 	private static int z = Integer.parseInt(a);
+	private static int m = 9999, n = 9999;
 	
 	public static void main(String[] args) {
 		
 		int s = getConversionData();
-		logger.info("Maximum palindrome number when multiplied " + m + " on " + n + " equally " + s);
+//		logger.info("Maximum palindrome number when multiplied " + m + " on " + n + " equally " + s);
+		logger.info("Максимальное число-палиндром, при умножении " + m + " на " + n + " равно " + s);
 		int d = getFirstMethod();
-		logger.info("Sum of digits " + a + " division residue method, is equal to " + d);
+//		logger.info("Sum of digits " + a + " division residue method, is equal to " + d);
+		logger.info("Сумма цифр числа " + a + " методом остатка от деления, равна " + d);
 		int j = getSecondMethod();
-		logger.info("Sum of digits " + a + " by character breaking, is equal to " + j);
+//		logger.info("Sum of digits " + a + " by character breaking, is equal to " + j);
+		logger.info("Сумма цифр числа " + a + " методом разделения числа на символы, равна " + j);
 	}
 
 	public static int getFirstMethod() {
