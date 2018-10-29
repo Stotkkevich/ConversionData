@@ -26,8 +26,8 @@ public class Palindrom {
 	public static boolean isMaxPalindrome(int result) {
 		final String str = String.valueOf(result);
 		int length = str.length();
-		for (int ñ = 0; ñ < length / 2; ñ++) {
-			if (str.charAt(ñ) != str.charAt(length - 1 - ñ))
+		for (int i = 0; i < length / 2; i++) {
+			if (str.charAt(i) != str.charAt(length - 1 - i))
 				return false;
 		}
 		return true;

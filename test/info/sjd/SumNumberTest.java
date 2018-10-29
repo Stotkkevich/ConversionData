@@ -1,7 +1,6 @@
 package info.sjd;
 
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 public class SumNumberTest {

@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 public class SplitNumber {
 
 	private static Logger logger = Logger.getLogger(SplitNumber.class.getName());
-	private static int a = 12345;
+	public static int a = 12345;
 	private static String b = String.valueOf(a);
 
 	public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class SplitNumber {
 
 	public static String getConversionData() {
 
-		final int[] ints = Arrays.stream(b.split("")).mapToInt(c -> Integer.parseInt(c)).toArray();
+		final int[] ints = Arrays.stream(b.split("")).mapToInt(i -> Integer.parseInt(i)).toArray();
 		return Arrays.toString(ints);
 	}
 }
