@@ -17,8 +17,7 @@ public class SumNumber {
 
 	public static int getFirstMethod() {
 
-		int x = 12345;
-		int s = 0;
+		int x = 12345, s = 0;
 
 		while (x != 0) {
 			s += x % 10;
